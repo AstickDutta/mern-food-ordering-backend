@@ -25,6 +25,8 @@ app.get("/health", async (req: Request, res: Response) => {
 
 app.use("/api/my/user", userRouter)
 
-app.listen(7000, () => {
-    console.log("server started on localhost:7000")
+const port = process.env.PORT || 6001
+
+app.listen(port, () => {
+    console.log(`server started on localhost:${port}`)
 })
