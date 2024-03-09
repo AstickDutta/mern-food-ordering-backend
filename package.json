@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "backend food ordering application where we can order food, view all restrurants, foods and perform lot of things",
   "main": "./src/server.ts",
-  "type": "module",
   "scripts": {
     "dev": "nodemon",
     "build":"npm install && npx tsc",
